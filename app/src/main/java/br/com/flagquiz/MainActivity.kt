@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         btnGoToSecond.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
-            intent.putExtra("NOME", $inputTextName.text.toString()))
+            intent.putExtra("NOME",inputTextName.text.toString())
+            startActivity(intent)
         }
 
     }
